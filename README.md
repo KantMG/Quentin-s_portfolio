@@ -1,6 +1,6 @@
 # Quentin-s_portfolio
 
-# [Project 1: Data analysis of the ILMB database](https://github.com/KantMG/Cinema_Project)
+# [Project 1: Data analysis of the ILMB database](https://github.com/KantMG/Cinema_Project/blob/master/README.md)
 
 THIS PROJECT ENLIGHT THE EVOLUTION OVER THE YEARS OF THE MOVIE AND SERIE MAKING.
 THE ADAPTATION OF THE WAY OF PRODUCTION AS WELL AS OUR WAY OF CONSOMATION ARE ANALYSED.
