@@ -36,14 +36,14 @@ HOW MUCH THE COUNTRIES ARE INVESTING IN THE FILMS PRODUCTION AND WHICH IS THE LE
 ## 💡 Skills
 
 - **Programming Languages:** Python, Fortran, C++
-- **Web Development:** HTML, CSS
+- **Web Development:** HTML, Dash, CSS
 - **Data Science:** Pandas, Dask, Numpy
 - **Other Tools:** Git, SQL, Mathematica, LaTeX, Power BI
 
 ## 📫 Contact Me
 
 - **Email:** [moreno_quentin@numericable.fr](moreno_quentin@numericable.fr)
-- **LinkedIn:** [Your LinkedIn](www.linkedin.com/in/quentin-moreno-727178b1)
+- **LinkedIn:** [quentin-moreno](www.linkedin.com/in/quentin-moreno-727178b1)
 
 ## 🏆 Achievements
 
