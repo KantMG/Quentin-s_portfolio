@@ -37,6 +37,11 @@ h3 {
     font-size: 1.5em; /* Font size for h3 */
 }
 
+/* Hides the header with the repository name */
+header .container-lg h1 {
+    display: none !important;
+}
+
 /* Link Styles */
 a {
     color: #1e90ff; /* Bright blue color for links */
