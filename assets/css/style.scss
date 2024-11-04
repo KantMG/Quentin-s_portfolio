@@ -42,6 +42,14 @@ header .container-lg h1 {
     display: none !important;
 }
 
+// Add this new CSS class for the left image
+.left-image {
+    float: left;                     /* Float the image to the left */
+    margin-right: 0px;             /* Space to the right of the image */
+    width: 100px;                   /* Set width; adjust as needed */
+    transform: rotate(90deg);       /* Rotate the image by 90 degrees */
+}
+
 /* Link Styles */
 a {
     color: #1e90ff; /* Bright blue color for links */
