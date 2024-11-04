@@ -1,3 +1,5 @@
+<img src="./inf_number.avif" alt="Profile Picture" style="float: left; margin-right: 10px; width: 100px; border-radius: 50%; transform: rotate(90deg);">
+
 # Hello! I'm Quentin Moreno-Gelos!
 
 I'm a passionate Theoretical Physicist/Data Scientist skilled in Python. I enjoy creating projects that solve real-world problems and love collaborating on open-source initiatives.
