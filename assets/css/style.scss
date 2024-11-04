@@ -1,40 +1,38 @@
----
----
-
-@import "{{ site.theme }}";
+// Remove the import statement with Liquid syntax
+// @import "{{ site.theme }}";
 
 // Variables
 $primary-color: #3498db; // Blue color
 $secondary-color: #2ecc71; // Green color
-$background-color: #121212; // Light gray background
-$text-color: white; // Dark text color
+$background-color: #f5f5f5; // Light gray background
+$text-color: #333; // Dark text color
 $font-stack: 'Helvetica Neue', Arial, sans-serif;
 
-/* Global Styles */
+// Global Styles
 body {
     margin: 0;
     padding: 0;
-    font-family: $font-stack; /* Font style */
-    background-color: $background-color; /* Dark background color */
-    color: $text-color; /* Standard text color */
-    line-height: 1.6; /* Line height for readability */
+    font-family: $font-stack;
+    background-color: $background-color;
+    color: $text-color;
+    line-height: 1.6;
 }
 
 h1, h2, h3 {
-    color: #ffffff; /* White text for headings */
+    color: $primary-color;
     margin-bottom: 10px;
 }
 
 h1 {
-    font-size: 2.5em; /* Font size for h1 */
+    font-size: 2.5em; // Font size for h1
 }
 
 h2 {
-    font-size: 2em; /* Font size for h2 */
+    font-size: 2em; // Font size for h2
 }
 
 h3 {
-    font-size: 1.5em; /* Font size for h3 */
+    font-size: 1.5em; // Font size for h3
 }
 
 /* Hides the header with the repository name */
@@ -45,74 +43,76 @@ header .container-lg h1 {
 // Add this new CSS class for the left image
 .left-image {
     float: left;                     /* Float the image to the left */
-    margin-right: 0px;             /* Space to the right of the image */
+    margin-right: 10px;             /* Space to the right of the image */
     width: 100px;                   /* Set width; adjust as needed */
+    border-radius: 50%;             /* Optional: make it circular */
     transform: rotate(90deg);       /* Rotate the image by 90 degrees */
 }
 
-/* Link Styles */
+
+// Link Styles
 a {
-    color: #1e90ff; /* Bright blue color for links */
-    text-decoration: none; /* No underline on links */
-    transition: color 0.3s ease; /* Smooth transition for hover effect */
+    color: $secondary-color;
+    text-decoration: none;
+    transition: color 0.3s ease;
+
+    &:hover {
+        color: darken($secondary-color, 10%); // Darken color on hover
+        text-decoration: underline; // Underline on hover
+    }
 }
 
-a:hover {
-    color: #add8e6; /* Light blue on hover */
-    text-decoration: underline; /* Underline on hover */
-}
-
-/* Container */
+// Container
 .container {
-    max-width: 1200px; /* Maximum width for content */
-    margin: 0 auto; /* Center the container */
-    padding: 20px; /* Padding around content */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
-/* Navigation Styles */
+// Navigation Styles
 nav {
-    background-color: #1c1c1c; /* Darker background for navigation */
-    padding: 15px; /* Padding around navigation */
-    text-align: center; /* Centered text in nav */
+    background-color: $primary-color;
+    padding: 15px;
+    text-align: center;
+
+    a {
+        color: white;
+        margin: 0 15px;
+        font-weight: bold;
+    }
 }
 
-nav a {
-    color: #ffffff; /* White links in navigation */
-    margin: 0 15px; /* Space between links */
-    font-weight: bold; /* Bold font for links */
-}
-
-/* Footer Styles */
+// Footer Styles
 footer {
-    background-color: #1c1c1c; /* Dark footer background */
-    text-align: center; /* Centered text in footer */
-    padding: 15px; /* Padding in footer */
-    position: relative; /* Footer positioning */
-    bottom: 0; /* Align footer to the bottom */
-    width: 100%; /* Full width footer */
+    background-color: darken($background-color, 5%);
+    text-align: center;
+    padding: 15px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+
+    p {
+        margin: 0;
+    }
 }
 
-footer p {
-    margin: 0; /* Remove default margin */
-}
-
-/* Responsive Styles */
+// Responsive Styles
 @media (max-width: 768px) {
     h1 {
-        font-size: 2em; /* Adjust h1 size for mobile */
+        font-size: 2em;
     }
 
     h2 {
-        font-size: 1.75em; /* Adjust h2 size for mobile */
+        font-size: 1.75em;
     }
 
     h3 {
-        font-size: 1.25em; /* Adjust h3 size for mobile */
+        font-size: 1.25em;
     }
 
     nav {
         a {
-            margin: 0 10px; /* Adjust link margin for mobile */
+            margin: 0 10px;
         }
     }
 }
