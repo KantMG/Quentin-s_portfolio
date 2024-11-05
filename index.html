@@ -1,80 +1,225 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quentin Moreno-Gelos's Portfolio</title>
-    <link rel="stylesheet" href="assets/css/style.css"> <!-- Link to your CSS file -->
-    <style>
-        /* Add any specific styles here if you want to override */
-    </style>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Quentin Moreno Gelos</title>
+    <link rel="shortcut icon" href="img/a-icon.ico" />
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+
+    <!-- Custom Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="css/animate.min.css" type="text/css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/creative.css" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
 </head>
-<body>
-	<div class="full-background">
-		<div class="background-image"></div> <!-- This will hold the left margin background -->
-		<div class="content">
-			<h1>Hello! I'm Quentin Moreno-Gelos!</h1>
-			<p>I'm a passionate Theoretical Physicist/Data Scientist skilled in Python. I enjoy creating projects that solve real-world problems and love collaborating on open-source initiatives.</p>
 
-			<h2>📖 About Me</h2>
-			<ul>
-				<li>💼 After an enriching journey as a theoretical physicist, delving deep into complex problems and analytical thinking, I'm now excited to transition into data analytics, where I can apply my analytical skills to uncover insights and drive data-driven decision-making.</li>
-				<li>🎓 Graduated with a PhD degree in theoretical laser-plasma physics.</li>
-				<li>🌱 Always learning: Currently exploring deep learning.</li>
-			</ul>
+<body id="page-top">
 
-			<h2>🚀 Projects</h2>
-			<p>Here are a few projects that I've been working on:</p>
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="index.html#page-top">Quentin Moreno-Gelos</a>
+            </div>
 
-			<h3><a href="https://github.com/KantMG/Cinema_Project/blob/master/README.md">Project 1: Data analysis of the ILMB database</a></h3>
-			<ul>
-				<li><strong>Description:</strong> THIS PROJECT ENLIGHTS THE EVOLUTION OVER THE YEARS OF MOVIE AND SERIES MAKING. THE ADAPTATION OF THE WAY OF PRODUCTION AS WELL AS OUR WAY OF CONSUMPTION ARE ANALYZED. HOW MUCH THE COUNTRIES ARE INVESTING IN FILMS PRODUCTION AND WHICH IS THE LEVEL OF INFLUENCE OF A COUNTRY OVER THE OTHERS.</li>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="index.html#about">About</a>
+                    </li>
+<!--                     <li>
+                        <a class="page-scroll" href="#workex">Work Experience</a>
+                    </li> -->
+                    <li>
+                        <a class="page-scroll" href="index.html#projects">Projects</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="../CV_datascience/main.pdf" target="_blank">Resume</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="index.html#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
 
-				<li><strong>Information on the dataframe:</strong>
-					<ul>
-						<li>The IMDb Non-Commercial Datasets have been used to perform this study, the open source can be found <a href="https://developer.imdb.com/non-commercial-datasets/">here</a>.</li>
-						<li>It corresponds to a multiple variety of tab-separated-values (TSV) formatted files in the UTF-8 character set.</li>
-					</ul>
-				</li>
+    <header>
+        <div class="header-content">
+            <div class="header-content-inner">
+                <h1>Hello! I'm Quentin!</h1>
+                <hr>
+                <p>I'm a passionate Theoretical Physicist/Data Scientist skilled in Python. I enjoy creating projects that solve real-world problems and love collaborating on open-source initiatives.</p>
+                <a href="index.html#about" class="btn btn-primary btn-xl page-scroll">About me</a>
+            </div>
+        </div>
+    </header>
 
-				<li><strong>Work achievement:</strong>
-					<ul>
-						<li>Creation of a user-friendly Dash interface for the IMDb dataframe analysis.
-							<ul>
-								<li>The Python library Dask is used over Pandas in order to handle the larger-than-memory datasets thanks to Parallel Computing.</li>
-								<li>Data extraction and merging between the many data files are optimized.</li>
-								<li>The interface offers a wide range of plot management thanks to many Dash callback functions.</li>
-							</ul>
-						</li>
-						<li>Study Highlight</li>
-					</ul>
-				</li>
-				<li><strong>Tech Stack:</strong> Python, Dash, Dask, CSS</li>
-			</ul>
+    <section class="bg-primary" id="about" style="height: 100vh">
+        <div class="container h-100">
+			<div class="row h-100 align-items-center">
+				<div class="col-lg-4">
+					<img src="img/quentin.jpg" class="img-responsive circular-image" alt="" style="width: 100%; height: auto;"> <!-- Make the image responsive -->
+				</div>
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <hr class="light">
+                    <p class="text">💼 After an enriching journey as a theoretical physicist, delving deep into complex problems and analytical thinking, I'm now excited to transition into data analytics, where I can apply my analytical skills to uncover insights and drive data-driven decision-making.</p>
+                    <p class="text">🎓 Graduated with a PhD degree in theoretical laser-plasma physics.</p>
+                    <p class="text">💡 Python, Fortran, SQL, Mathematica, Git, HTML, LaTeX.</p>
+                    <p class="text">🌱 Always learning: Currently exploring deep learning.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="no-padding" id="projects" style="height: 100vh;">
+      <div class="container" style="padding-top: 50px">
+          <div class="row">
+              <div class="col-lg-24 text-center">
+                  <h2 class="section-heading">Projects</h2>
+                  <hr class="primary">
+              </div>
+          </div>
+      </div>
+        <div class="container-fluid">
+            <div class="row no-gutter justify-content-center">
+                <div class="col-lg-3 col-lg-offset-1 coldcol-sm-4">
+                    <div style="width :80%">
+                        <a href="Cinema_Project.html" class="portfolio-box" >
+                            <img src="img/Cinema_project.jpg" class="img-responsive" alt="">
+                            <div class="portfolio-box-caption">
+                                <div class="portfolio-box-caption-content">
+                                  <div class="project-category text-faded">
+                                      Applied Data Analytics Project
+                                  </div>
+                                    <div class="project-name">
+                                        The seventh art
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <h3 style="text-align: center">Data Scientist</h3></br>
+                        <p class="text-muted" style="font-size: small"> A control system and an analytics engine to help plants grow</p>
+                        <!--b class="text-muted">Accepted Poster at IEEE Viz Conference 2015!</b-->
+                    </div>
+                </div>
+                <div class="col-lg-3 col-lg-offset-1 col-sm-4">
+                    <div style="width :80%">
+                        <a href="cookcounty.html" class="portfolio-box">
+                            <img src="img/Energy_Project.png"  class="img-responsive" alt="">
+                            <div class="portfolio-box-caption">
+                                <div class="portfolio-box-caption-content">
+                                    <div class="project-category text-faded">
+                                        Applied Data Analytics Project
+                                    </div>
+                                    <div class="project-name">
+                                        World energy producion
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <h3 style="text-align: center">Data Scientist</h3></br>
+                        <p class="text-muted" style="font-size: small"> Upcoming soon!</p>
+                        <!--b class="text-muted">A fun user research project with great people with love for food!!</b-->
+                    </div>
+                </div>
+                <div class="col-lg-3 col-lg-offset-1 col-sm-4">
+                    <div style="width :80%">
+                        <a href="cookcounty.html" class="portfolio-box">
+                            <img src="img/OMEGA2.png"  class="img-responsive" alt="">
+                            <div class="portfolio-box-caption">
+                                <div class="portfolio-box-caption-content">
+                                    <div class="project-category text-faded">
+                                        Academic research Project
+                                    </div>
+                                    <div class="project-name">
+                                        Laboratory astrophysic
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <h3 style="text-align: center">Post doctoral fellow</h3></br>
+                        <p class="text-muted" style="font-size: small"> Anthology of studies during my period as a researcher in plasma physics </p>
+                        <!--b class="text-muted">A fun user research project with great people with love for food!!</b-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-			<p>👉 Check out more of my projects <a href="https://github.com/KantMG">here</a>.</p>
+    <section id="contact">
+        <div class="container">
+            <div class="row" class="call-to-action">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Get In Touch!</h2>
+                    <hr class="primary">
+                </div>
+                <div class="col-lg-2 col-lg-offset-2 text-center">
+                    <a href="https://github.com/KantMG" class="fa fa-github fa-3x wow bounceIn"></a>
+                </div>
+                <div class="col-lg-2  text-center">
+                    <a href="https://www.linkedin.com/in/quentin-moreno-727178b1/" class="fa fa-linkedin fa-3x wow bounceIn"></a>
+                </div>
+                <!--div class="col-lg-1 text-center">
+                    <a class="fa fa-phone fa-3x wow bounceIn"></i>
+                </div-->
+                <div class="col-lg-2 text-center">
+					<a href="https://www.researchgate.net/profile/Quentin-Moreno" target="_blank">
+						<img src="./img/researchgate-icon.png" alt="ResearchGate" style="width: 40px; height: auto;">
+					</a>
+                </div>
+                <div class="col-lg-2 text-center">
+                    <a href="moreno_quentin@numericable.fr" class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-			<h2>💡 Skills</h2>
-			<ul>
-				<li><strong>Programming Languages:</strong> Python, Fortran, C++</li>
-				<li><strong>Web Development:</strong> HTML, Dash, CSS</li>
-				<li><strong>Data Science:</strong> Pandas, Dask, Numpy</li>
-				<li><strong>Other Tools:</strong> Git, SQL, Mathematica, LaTeX, Power BI</li>
-			</ul>
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
 
-			<h2>📫 Contact Me</h2>
-			<ul>
-				<li><strong>Email:</strong> <a href="mailto:moreno_quentin@numericable.fr">moreno_quentin@numericable.fr</a></li>
-				<li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/quentin-moreno-727178b1">quentin-moreno</a></li>
-			</ul>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
 
-			<h2>🏆 Achievements</h2>
-			<ul>
-				<li><strong>Publication:</strong> <a href="https://www.researchgate.net/profile/Quentin-Moreno">Research Paper</a></li>
-			</ul>
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/jquery.fittext.js"></script>
+    <script src="js/wow.min.js"></script>
 
-			<p>Thank you for stopping by! Feel free to connect and check out my work!</p>
-		</div>
-	</div>
+    <!-- Custom Theme JavaScript -->
+    <script src="js/creative.js"></script>
+
 </body>
+
 </html>
