@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Quentin Moreno-Gelos</title>
+    <link rel="shortcut icon" href="img/a-icon.ico" />
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+
+    <!-- Custom Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="css/animate.min.css" type="text/css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/creative.css" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top">
+
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll"  href="index.html">Home</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="Exploratory_Data_Analysis.html#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <section class="bg-primary" id="about" style="height: 120vh">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-lg-8 text-center" style="text-align: left">
+                    <!-- <hr class="light"> -->
+                    <h2 style="font-style: italic">Exploratory Data Analysis<h2>
+                    <h3>OBJECTIVE</h3>
+                    <p class="text-faded" style="font-size: small">
+                    Development of an advanced user-friendly visualization and analysis tool for profiling dataframes.
+                    <!--How much the countries are investing in films production and which is the level of influence of a country over the others. -->
+                    </p>
+
+                    <h4>Libraries required</h4>
+                    <ul class="text-faded" style="font-size: small">
+                        <li>
+                            <h5>Data Analysis Libraries:</h5>
+                            <span style="color: goldenrod;">NumPy</span> - 
+                            <span style="color: goldenrod;">Pandas</span> - 
+                            <span style="color: goldenrod;">SciPy</span>
+                        </li>
+                        <li>
+                            <h5>Data Visualization Tools:</h5>
+                            <h5>
+                            <span style="color: goldenrod;">Plotly</span> - 
+                            <span style="color: goldenrod;">Matplotlib</span>                            
+                            </h5>
+                        </li>
+                        <li>
+                            <h5>Machine learning:</h5>
+                            <h5><span style="color: goldenrod;">scikit-learn</span></h5>
+                        </li>
+                        <li>
+                            <h5>Tableau:</h5>
+                            <h5><span style="color: goldenrod;">Dash</span></h5>
+                        </li>                   
+                    </ul> 
+                    </p>
+
+
+
+                    <h3>Interface properties</h3>
+                    <p class="text-faded" style="font-size: small">
+                    The interface presents two tabs. 
+                    One tab is dedicated to the profiling of the dataframe. 
+                    The second is made to have a deep analysis of the data.
+                    </p>
+                    
+                    <h4>Tab 1 : Profiling</h4>
+                    
+                    <ul class="text-faded" style="font-size: small">
+                        <li>
+                            <h5>All the basic information regarding the properties of the dataframe.</h5>
+                        </li>
+                        <li>
+                            <h5>Target/Features correlation.</h5>
+                            <h5>Numerical feature: Correlation Matrix</h5>
+                            <h5>Categorical feature: Crosstab</h5>
+                        </li>
+                        <li>
+                            <h5>Hypothesis Testing Methods:</h5>
+                            <h5>If the conditions are fulfilled: t-test - ANOVA - chi2</h5>
+                            <h5>If not: Welch's ANOVA - Kruskal-Wallis test - Mann-Whitney U Test</h5>
+                        </li>
+                    </ul> 
+                    </p>
+                    <h4>Tab 2 : Analysis</h4>
+                    
+                    <h5>The interface offers a wide range of plot management capabilities through various Dash callback functions.</h5>
+                    
+                    <ul class="text-faded" style="font-size: small">
+                        <li> 
+                            <h5>Data filtration.</h5>
+                        </li>
+                        <li>
+                            <h5>Creation of functions.</h5>
+                        </li>
+                        <li>
+                            <h5>Smoothing with the Savitzky-Golay filter.</h5>
+                        </li>
+                        <li>
+                            <h5>Machine learning regressions.</h5>
+                        </li>
+                        <li>
+                            <h5>Dynamic subplot modification.</h5>
+                        </li>
+                    </ul> 
+
+                   <a href="https://github.com/KantMG/Exploratory_Data_Analysis" class="btn btn-primary btn-xl page-scroll" target="_blank">Visualization & analysis tool</</a>
+                </div>
+                <div class="col-lg-4 text-center" style="padding-top: 100px">
+					<video height="500" width="500" controls>
+					<source src="img/Exploratory_Data_Analysis/EDA_movie.mp4" type="video/mp4">
+					</video>
+					</a>
+                <p>A Comprehensive Guide to Our Visualization Tool.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <div class="row" class="call-to-action">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Get In Touch!</h2>
+                    <hr class="primary">
+                </div>
+                <div class="col-lg-2 col-lg-offset-2 text-center">
+                    <a href="https://github.com/KantMG" class="fa fa-github fa-3x wow bounceIn"></a>
+                </div>
+                <div class="col-lg-2  text-center">
+                    <a href="https://www.linkedin.com/in/quentin-moreno-727178b1/" class="fa fa-linkedin fa-3x wow bounceIn"></a>
+                </div>
+                <!--div class="col-lg-1 text-center">
+                    <a class="fa fa-phone fa-3x wow bounceIn"></i>
+                </div-->
+                <div class="col-lg-2 text-center">
+					<a href="https://www.researchgate.net/profile/Quentin-Moreno" target="_blank">
+						<img src="./img/researchgate-icon.png" alt="ResearchGate" style="width: 40px; height: auto;">
+					</a>
+                </div>
+                <div class="col-lg-2 text-center">
+                    <a href="moreno_quentin@numericable.fr" class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/jquery.fittext.js"></script>
+    <script src="js/wow.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/creative.js"></script>
+
+</body>
+
+</html>
